@@ -80,7 +80,9 @@ h3 {
 }
 
 .close {
-  right: 5%;
+  position: absolute;
+  top: 15px;
+  right: 35px;
   transition: 0.3s;
 }
 .close:hover,
