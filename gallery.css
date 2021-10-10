@@ -1,0 +1,44 @@
+#myImg {
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImg:hover {
+  opacity: 0.8;
+}
+.modal {
+  display: none;
+  z-index: 1;
+  padding-top: 120px;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+.modal-content {
+  max-width: 500px;
+}
+#caption {
+  padding: 10px 0;
+  height: 150px;
+}
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.close {
+  top: 5%;
+  right: 10%;
+  font-size: 50px;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  cursor: pointer;
+}
