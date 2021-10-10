@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@100;200;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Gallery</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container d-flex justify-content-between">
+            <div>
+                <a class="navbar-brand" href="#"><img class="logo bg-light" src="images/logo.jpg" alt="" width=70 height=70></a>
+            </div>
+            <div >
+                <a class="navbar-brand d-flex align-items-center h1" href="#"><h1>Sneaker world</h1></a>
+            </div>
+            <button class="navbar-toggler"height=50  type="button " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">    
+                <ul class="navbar-nav">
+                <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="index.html"><p>Home</p></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html"><p>Gallery</p></a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </nav>
+    <div class="text-center p-4">
+        <h1 class=" text-uppercase">Gallery</h1>
+        <hr>
+    </div>
+    <div class="row imageBox bg-light">
+     
+        <!--
+     <div class="col-lg-3 col-md-4 col-6"><img src="images/converse.jpg" class="img-fluid " height="400" alt="Responsive image"><div class="text-center p-4"><h3 class=" text-capitalize">Customised coca-cola allstar</h3><p>&#36192.50</p></div></div>
+    <div class="col-lg-3 col-md-4 col-sm-6"><img src="images/yeezy2.jpg" class="img-fluid "  height="400" alt="Responsive image"><div class="text-center p-4"><h3 class=" text-capitalize">yeezy 350</h3><p>&#36302.50</p></div></div>
+        <div class="col-lg-3 col-md-4 col-sm-6"><img src="images/af1.jpg" class="img-fluid "  height="400" alt="Responsive image"><div class="text-center p-4"><h3 class=" text-capitalize">Nike Air Force 1</h3><p>&#3699.50</p></div></div>
+        <div class="col-lg-3 col-md-4 col-sm-6"><img src="images/taylor.jpg" class="img-fluid " height="400"  alt="Responsive image"><div class="text-center p-4"><h3 class=" text-capitalize">taylor chucks converse</h3><p>&#36120.50</p></div></div>
+        <div class="col-lg-3 col-md-4 col-sm-6"><img src="images/teethvans.jfif" class="img-fluid "height="400"  alt="Responsive image"><div class="text-center p-4"><h3 class=" text-capitalize">Customised old school vans</h3><p>$90.50</p></div></div>
+        <div class="col-lg-3 col-md-4 col-sm-6"><img src="images/yezzzzy.jpg" class="img-fluid "height="400"  alt="Responsive image"><div class="text-center p-4"><h3 class=" text-capitalize">yeezy 350 ash</h3><p>$3150</p></div></div>
+        <div class="col-lg-3 col-md-4 col-sm-6"><img src="images/redjays.jpg" class="img-fluid " height="400" alt="Responsive image"><div class="text-center p-4"><h3 class=" text-capitalize">air jordans 1</h3><p>$122.50</p></div></div>
+        <div class="col-lg-3 col-md-4 col-sm-6"><img src="images/jays1.jpg" class="img-fluid " height="400" alt="Responsive image"><div class="text-center p-4"><h3 class=" text-capitalize">air jordans 1 retro</h3><p>$233.50</p></div></div>
+        <div class="col-lg-3 col-md-4 col-sm-6"><img src="images/converseallstar.jpg" class="img-fluid " height="400" alt="Responsive image"><div class="text-center p-4"><h3 class=" text-capitalize">converse all star</h3><p>$85.50</p></div></div>
+        <div class="col-lg-3 col-md-4 col-sm-6"><img src="images/greenvans.png" class="img-fluid " height="400" alt="Responsive image"><div class="text-center p-4"><h3 class=" text-capitalize">old skool vans</h3><p>$132.50</p></div></div>
+        <div class="col-lg-3 col-md-4 col-sm-6"><img src="images/orange.jpg" class="img-fluid " height="400" alt="Responsive image"><div class="text-center p-4"><h3 class=" text-capitalize">Nike airmax 720</h3><p>$149.99</p></div></div>
+        <div class="col-lg-3 col-md-4 col-sm-6"><img src="images/jays4.jpg" class="img-fluid "height="400"  alt="Responsive image"><div class="text-center p-4"><h3 class=" text-capitalize">air jordans 4 retro</h3><p>$99.50</p></div></div> -->
+            
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+        
+    </div>
+<!-- Navheader -->
+<script src="gallery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
