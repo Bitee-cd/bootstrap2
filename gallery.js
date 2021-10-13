@@ -10,38 +10,74 @@ let array2=[ '<div class="col-lg-3 col-md-4 col-sm-6"><img src="images/converse.
     '<div class="col-lg-3 col-md-4 col-sm-6"><img src="images/greenvans.png" class="img-fluid " id="myImg" height="400" alt="old skool vans"><div class="text-center p-4"><h3 class=" text-capitalize">old skool vans</h3><p>$ 132.50</p></div></div>',
     '<div class="col-lg-3 col-md-4 col-sm-6"><img src="images/orange.jpg" class="img-fluid " id="myImg" height="400" alt="Nike airmax 720"><div class="text-center p-4"><h3 class=" text-capitalize">Nike airmax 720</h3><p>$ 149.99</p></div></div>',
     '<div class="col-lg-3 col-md-4 col-sm-6"><img src="images/jays4.jpg" class="img-fluid " id="myImg"height="400"  alt="air jordans 4 retro"><div class="text-center p-4"><h3 class=" text-capitalize">air jordans 4 retro</h3><p>$ 99.50</p></div></div>']
-
-// function to display images
-function displayItems(array){
-    for(let i=0;i<array.length;i++){
-    document.querySelector('.imageBox').insertAdjacentHTML('beforeend',array[i]);
-    }
+let array1=[{
+    image:"converse.jpg",
+    name:"Customised coca-cola allstar",
+    price:"$192.50"
+},{
+    image:"yeezy2.jpg",
+    name:"yeezy 350",
+    price:"$402.50"
 }
-displayItems(array2)
-
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.querySelectorAll("#myImg");
-var modalImg = document.getElementById("myImg");
-var captionText = document.getElementById("caption");
-
-function work(x){
-    for ( let i = 0; i < x.length; i++) {
-        x[i].onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-          }
-      }
+,{
+    image:"af1.jpg",
+    name:"Air Force 1",
+    price:"$302.50"
 }
-
-work(img)
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
+,{
+    image:"taylor.jpg",
+    name:"Taylor Chucks",
+    price:"$122.50"
 }
+,{
+    image:"teethvans.jfif",
+    name:"Old school vans",
+    price:"$92.99"
+}
+,{
+    image:"yezzzzy.jpg",
+    name:"yeezy 350",
+    price:"$142.50"
+}
+,{
+    image:"redjays.jpg",
+    name:"Air Jordans 1",
+    price:"$122.50"
+}
+,{
+    image:"jays1.jpg",
+    name:"Air Jordans retro 350",
+    price:"$132.50"
+}
+,{
+    image:"converseallstar.jpg",
+    name:"Converse all star",
+    price:"$232.50"
+}
+,{
+    image:"greenvans.png",
+    name:"Old school vams",
+    price:"$78.50"
+}
+,{
+    image:"orange.jpg",
+    name:"Nike Sneakers",
+    price:"$138.99"
+}
+,{
+    image:"jays4.jpg",
+    name:"air jordan 4 retro",
+    price:"$127.50"
+}
+]
+let sneakers = document.querySelector(".imageBox")
+array1.forEach((e)=>{
+let html = `<div class="col-lg-3 col-md-4 col-sm-6">
+                <img src="images/${e.image}" class="img-fluid " id="myImg" alt="${e.name}">
+                <div class="text-center">
+                    <h3 class=" text-capitalize">${e.name}</h3>
+                    <p>${e.price}</p>    
+                </div>
+             </div>`
+            sneakers.insertAdjacentHTML("beforeend", html);
+        })
