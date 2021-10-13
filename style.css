@@ -1,5 +1,6 @@
 body {
   font-family: "Oswald", sans-serif;
+  overflow-x: hidden;
 }
 .nav-item {
   padding: 0 18px;
@@ -37,7 +38,7 @@ h3 {
   color: #fff;
 }
 .imageBox img {
-  height: 400px;
+  height: 390px;
   width: 100%;
   border-radius: 5px;
   cursor: pointer;
